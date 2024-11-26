@@ -1,0 +1,101 @@
+.background-formacao{   
+    background-color: #FFF;
+    }
+#formacao{
+    max-width: 1200px;
+    padding: 50px 50px 100px 50px;
+    margin: 0 auto;
+    }
+
+    
+#formacao-titulo{
+    color: #141414;    
+}
+.formacao-lista{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+    gap: 20px;
+    
+}
+.formacao-lista .faculdade{ 
+    background-color: #141414;   
+    border-radius: 5px;
+    flex-direction: column;
+    flex:1;
+    max-width: 250px;
+    
+}
+.faculdade-tipo{
+    font-size: 1.1rem;
+    padding:10px 15px 8px 10px;
+    background-color: #9F111B;
+    color: white;  
+    text-justify: center;   
+}
+.faculdade-curso{
+    font-size: 1rem;
+    padding:10px 15px;
+    color: #FFF;
+}
+.faculdade-instituicao{
+    display: block;
+    padding:10px 15px;
+    color: #FFF;
+}
+.competencias-lista{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+.competencias-conteiner{
+    
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.competencias-conteiner p,h3{
+    color: #141414;
+    font-size:1.1rem;
+}
+.competencias-conteiner .curso-horas{
+    color:#B11623
+}
+.competencias-titulo{
+    display: flex;
+}
+.curso-nome{
+    padding-left: 35px;
+    display: flex;
+    justify-content: space-between;
+}
+.competencias-titulo::before {    
+    content: "";   
+    display: block;      
+    width: 24px;
+    height: 20px;
+    padding-left: 10px;     
+}
+#curso-tipo::before{
+    background: url("../img/cursos.svg") no-repeat center;
+}
+#idioma-txt::before{
+    background: url("../img/idiomas.svg") no-repeat center;
+}
+
+@media(max-width:800px){
+    .competencias-conteiner{
+        gap: 20px;
+    }
+    .competencias-lista{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        justify-items: center;
+    }
+    .formacao-lista{
+        justify-content: center;
+        gap: 20px;
+        margin-bottom: 20px;
+    }
+}

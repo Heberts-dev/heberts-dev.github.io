@@ -1,0 +1,54 @@
+#contato{
+    max-width: 1200px;
+    padding: 100px 50px 50px 50px;
+    margin: 0 auto;
+    position: relative;
+    }
+.footer-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    margin-bottom: 100px;
+}
+.footer-grid p{
+    max-width: 30ch;
+    font-size: 1.1rem;
+}
+.contato-info li{
+    font-size: 1.1rem;
+    text-align: right;   
+}
+#contato::before{
+    content: "";
+    display: block;
+    width:100px;
+    height:100px;
+    background: url('../img/detalhe.svg');
+    background-size: 100px;
+    position: absolute;
+    top: -45px;
+    z-index: 0;    
+    }
+
+@media (max-width:650px){
+.footer-grid{
+    grid-template-columns: 1fr;
+    margin-bottom: 50px;
+    gap: 20px;
+    justify-items: center;
+}
+.contato-info li{
+    font-size: 1.1rem;
+    text-align: left;   
+}
+.direitos-txt{
+    text-align: center;
+}
+#contato::before{
+    content: "";
+    background: none;
+    background-size: 150px;
+ 
+    }
+}
+

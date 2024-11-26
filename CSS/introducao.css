@@ -1,0 +1,109 @@
+.introducao{
+max-width: 1200px;
+padding: 40px 50px;
+margin: 0 auto;
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 50px;
+align-items: center;
+justify-items: center;
+
+}
+
+.introducao-titulo h1{
+    position: relative;
+    margin-bottom: 20px;
+    font-size: 3.5rem;
+    line-height: 1;
+    color: white;;
+}
+.introducao h1::before{
+    content: "";
+    display: block;
+    width:100px;
+    height:100px;
+    background: url('../img/detalhe.svg');
+    background-size: 100px;
+    position: absolute;
+    top: 25px;
+    left: -30px;
+    z-index: -1;    
+}
+.introducao-titulo p{
+font-size: 1rem;
+
+}
+.introducao img{
+    max-height: 350px;  
+    border: solid 3px #B11623;
+    border-radius: 5px;
+    
+}
+@media (max-width:900px){
+    .introducao{
+        gap:30px;
+        padding: 20px 50px;
+        grid-template-columns: 1fr 1fr;
+    }
+    .introducao h1{
+        font-size: 2.5rem;
+        margin-bottom: 15px;
+    }
+    .introducao p{
+        font-size: 0.9rem;
+    }
+    .introducao h1::before{
+        width:60px;
+        height:60px;
+        background-size: 60px;
+        left:-19px;
+        top:28px;
+    }
+}
+@media (max-width:700px){
+    .introducao{
+        gap:20px;
+        padding: 10px 20px;
+    }
+    .introducao h1{
+        font-size: 2rem;
+        margin-bottom: 10px;
+    }
+    .introducao p{
+        font-size: 0.8rem;
+    }
+    .introducao h1::before{
+        width:50px;
+        height:50px;
+        background-size: 50px;
+        left:-15px;
+        top:20px;
+    }
+}
+@media (max-width:530px){
+    .introducao h1{
+        font-size: 1.5rem;
+        margin-bottom: 5px;
+    }
+    .introducao p{
+        font-size: 0.7rem;
+    }
+    .introducao h1::before{
+        width:30px;
+        height:30px;
+        background-size: 30px;
+        left: -9px;
+        top:20px;
+    }
+    .introducao{
+        gap:10px;
+    }
+}
+@media (max-width:400px){
+    .introducao .introducao-foto{
+        display: none;
+    }
+    .introducao{
+        grid-template-columns: 1fr;
+    }
+}

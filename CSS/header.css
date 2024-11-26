@@ -1,0 +1,40 @@
+.header{
+    max-width: 1200px;
+    padding: 20px 50px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 50px;
+    align-items: center;
+    justify-items: center;   
+}
+.header-menu{
+    display: flex;
+    flex-wrap: wrap;
+    gap:20px;
+    
+}
+
+.header-menu li a{
+    padding: 10px;    
+    font-size: 1rem;
+}
+.header-menu li a:hover{
+    background-color: #9F111B;
+    border-radius: 4px;  
+}
+#header-nome{
+    font-size: 3rem;
+    color: white;
+}
+
+@media (max-width:900px){
+.header{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    gap: 20px;
+}
+}
